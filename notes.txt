@@ -1,0 +1,454 @@
+JavaScript?
+FrontEnd => Any page/design/functionality which runs on user's browser (Client)
+BackEnd => Any functionality written in any language which runs on server. (Server)
+
+JavaScript is a scripting language which works on both FrontEnd as well as on BackEnd
+
+
+FrontEnd JS Libraries/Framewor : React JS (Libraries), Angular (Franework), Vue JS etc
+BackEnd JS : Node JS with Express JS, Meteor JS, Backbon JS
+
+Variables? Variable is used to store/hold any value in it
+Maths : x, y
+
+Naming of Variables : 
+    Ways : 
+        1. Camel Case : productPrice, userName, firstName // JavaScript, Java, Python
+        2. Pascal Case : ProductPrice, UserName, FirstName // .net (C#)
+        3. Snake Case : product_price, user_name, first_name // MySql
+    Rules : 
+        1. Can't give space in a variable name
+        2. Variable name can contain aplhabets, number, _ and $
+        3. Variable name can't start with a number
+        4. Reserved Word/Keyword are not allowed in naming a variable.
+        Variable names are always case sensitive
+    NOTE : ALWAYS GIVE MEANINGFUL NAMES TO VARIABLES
+Operator => A symbol which operates 2 (or more) different variables or a variable and a value
+= => Assignment Operator
+
+    1. Arithmatic Operator : +, -, *, /
+    2. Logical Opertor : && (and) , || (or) , ! (not)
+    3. Comparision Operator : <(less than), >(greather than) , <=, (less than on equal to), >=, (greater than or equal to)
+
+Expression : It is a combination of variables and operator which evaluates(results) in a value
+
+Framework => Set of pre defined classes and functionalties. (Rich / Extensive set of functionalities)
+Libraires => Set of pre defined classes and functionalties. (Limited set of functionalities)
+
+
+2 Types of Code writers : 
+    1. Code Editor : Notepad, Notepad++, VS Code, Sublime Text editor etc
+    2. IDE (Integrated Development Environment) : NetGeans, InteliJ, Eclipse etc
+
+
+Alert : A way to get user's attention on the browser
+Confirm : Give a option between yes/no to the user
+Propmt : To take any input from the user
+
+Data Types : The type of data that variables holds.
+    1. Primitive Data Types : 
+        a. numbers : integers, floating point numbers, NaN : Not a number, Infinity
+        b. string : Any text (single quote, double quote)
+        c. boolean : true or false
+        d. null : Special value when we assign empty value to a variable
+        e. undefined : When we don't give any value to varialbe
+    2. Reference (Non-Primitive) Data Types :
+        a. object
+        b. array 
+
+Control Flow : 
+Conditions, Repetitions
+if else, loops
+
+
+
+Strings? => String is a character of collection of charcters
+
+Strings can be represented using Single('') or Double Quotes ("")
+
+E.g "John", "A", "B", "John-Doe", "john@example.com", "9876543210" etc
+'John', 'A', 'B', 'John-Doe', 'john@example.com', '9876543210'
+
+String methods : 
+
+slice : Takes negative values (Starts counting or slicing from the end of the string)
+substring : Does not takes negative values
+
+
+
+NOTE : Whenever we call a method/function, we use () brackets after method name
+
+
+Null vs Undefined : 
+
+Truthy and Falsy : 
+List of Falsy Values : 
+    false
+    null
+    undefined
+    '' //empty string
+    0
+    NaN
+
+
+Control Flow : 
+
+Ternary Operator (?) : Shorthand way to write if else block
+Template String => A way to write strings in JS
+
+JS Comparision Table : 
+https://dorey.github.io/JavaScript-Equality-Table/
+
+Arrays?
+Array is a List.
+[]
+
+Array Methods :
+push : to add new items to Array
+pop : to remove the item from the end of the array
+unshift: to add the new element at the begining of the array
+shift: to delete the element from the begining of the array
+splice: 
+    1. Replace any item in array
+    2. Delete any item(s) at any position in array
+    3. Add item(s) at any position in array
+concat : to merge 2 arrays
+toString: to convert an array into string
+reverse : to reverse an arary (reversing the sequence)
+sort: to sort the array in a particular manner
+
+
+Ways to add new items in an Array
+    1. Add item by index e.g users[0] = 'John';
+    2. Using push method e.g users.push('John');
+    3. Using spread operator (...)
+
+    Loop ?
+Looping is a concept which is used to perform repetitive code operations.
+
+Types of Loop : 
+    1. while
+    2. for
+
+When loop never stops exection its called as infinite loop.
+
+Iteration : Each repetition is called iteration.
+
+Break : It stops or breaks our loop in between its execution.
+Continue : Skip an interation in a loop.
+
+
+JSON (JavaScript Object Notation) : Array of Objects
+
+
+Functions?
+A set or block of code assosiated with a name.
+
+1. Function Declaration : To decalre a function with a name and give code block to it for some functionlity.
+
+2. Function Calling : Call a function by its name.
+
+
+Parameters : These are the values in the backetes of FUNCTION DEFINITION.
+
+Arguments : These are the actual values passed to the FUNCTION CALL.
+
+
+
+Scope of a Variables : 
+    1. Global : Can be accessed througout the program.
+    2. Local : Can be accessed inside the function/block of code only.
+
+Hoisting : Moving a variable declaration to the top of its scope.
+Q. Which values are hoisted in JS.
+A. var and functions are hoisted in JS.
+
+JS Engine Executes code in 2 phases : 
+1. Memory Allocation
+2. Code Execution
+DOM => Document Object Model
+                html
+        head            body
+script meta title     h1 p div div
+
+
+
+HTML Tags/Nodes/HTML Element
+
+
+Selectors (CSS)
+ID => #
+Class => .
+Tag => Tag Name
+
+#head {
+    color: blue;
+}
+
+.description {
+    color: red;
+}
+
+div {
+    color: green;
+}
+
+
+Methods in DOM to fetch/search/find an Node in HTML Page : 
+getElementById() => Used to find element with the help of ID.
+getElementsByClassName() => Used to find elemnts with the help of class name.
+getElementsByTagName() => Used to find the elements with the help of tagname
+
+.sample span {
+    color: blue;
+}
+
+.sample > span {
+    color: blue;
+}
+BOM (Browser Object Model), it acts as a super set of DOM (Document Object Model)
+
+
+DOM represents our HTML page in the form of a tree. (document)
+
+BOM represents browser window. (window)
+
+BOM
+    - document (DOM)
+    - screen -> width, height, availWidth, availHeight
+    - navigator -> device controls, geolocation, clipboard etrc
+    - location -> current location, base url/origin url, porotocol info
+    - history
+    - localStorage
+
+    btoa() => Encoded data into base64 format
+    atob() => Decodes the data from base64 to plain text
+
+
+
+negative infinity to positive infity (Numerical Superset)
+
+Whole numbers (Subset)
+Natural number (Subset)
+Positive number (Subset)
+Negative number (Subset)
+
+
+HTTP(S) => HyperText Transfer Protocol Secure
+
+SSL => Secure Socket Layer
+
+
+
+AJAX : Asynchronous JavaScript and XML
+AJAX helps us in sending the data from/to, frontend/backend
+client/server.
+
+XML : Extensible Markup Language
+<user-data>
+    <fname>John</fname>
+    <lname>Doe</lname>
+</user-data>
+
+JSON : JavaScript Object Notation
+userData: {
+    fname: John,
+    lname: Doe
+}
+
+1. Send data to the server
+2. Get the data from the server
+
+
+Note : To get the data from the server we need a URL
+This URL is called as API end point.
+
+
+Methods to get/send data to an API End point 
+E.g of API END point : https://jsonplaceholder.typicode.com/todos/
+
+Methods : 
+1. GET : Used to get some data from an API end point
+2. POST : Used to send data to server to create/save something. 
+3. PUT/PATCH : Used to request a change in data at the server.
+4. DELETE : Used to delete some data on the server. 
+
+API : Application Programming Interface
+
+REST API : Representational State Transfer Application Programming Interface
+
+While working with AJAX, we need 2 important things
+1. API end point
+2. Method (HTTP Method)
+
+
+HTTP Status Code :
+
+Success Codes 2xx
+200 : Ok
+201 : Created
+
+Failure Code (Client) 4xx
+400 : Bad Request
+401 : Unauthorized
+403 : Forbidden
+404 : Not Found
+#429 : Limit Reached 
+
+
+Server Failure (Server) 5xx
+500 : Internal Server Error
+502 : Bad Gateway
+503 : Service Unavailable
+504 : Gateway Timeout
+
+
+AJAX Properties : 
+readyState : Which gives us information about the state of our api call
+States : 
+1 : Not yet sent / Unsent : Order is placed, not yet dispatched
+2 : Opened : Order is picked up by the courier
+3 : Awaiting/Loading : Order is in transit
+4 : Done (Success/Failure) : Order is delivered
+
+
+200 : My order is correct and received
+400 : My order is damanged
+404 : Empty box received
+
+readyStateChange : This is an event which triggers everytime when there is a change in readyState
+
+
+
+Conversion between JSON/String : 
+JSON to String : JSON.stringify(input);
+String to JSON : JSON.parse(input);
+
+
+BOM : Browser Object Model
+
+1. History Object :
+    length : Shows us the number of pages opened in a tab
+    back() : Takes back by one step
+    forward() : Takes forward by one step
+    go() : Takes an integer as an input and takes back and forward by n pages. For going back provide a negative value and for going forward provide a positive value, passing 0 will keep us on the same page
+    state : Used to pass data from URL to another on the same base URL/domain. <WILL COVER THIS PART IN REACT> 
+2. Local Storage
+    setItem(): Used to store data in local storage
+    getItem(): Used to get data from local storage
+    removeItem(): Used to delete/remove the data from local storage.
+
+
+Try-Catch : Used to handle errors in JS
+Syntax : try {
+    // Code which might get an error
+} catch (error) {
+    // Code to print a user friendly message and let the exectuion continue further
+}
+
+Throwing an error : Used to throw an error manually in case if something is wrong in a method/function.
+Syntax : throw new Error(ERROR_MESSAGE);
+
+
+OOP (Object Oriented Programming)
+In JS, Object is a collection of key-value pairs
+E.g
+person = {
+    fName: "John",
+    lName: "Doe",
+    address: "123,ABC Street",
+    getAddress: function () {
+        return "123, ABC Street";
+    }
+}
+
+person.address;
+person.fName;
+person.getAddress();
+
+
+Constructor Function : The fn starts with a Capital Letter in its name and take initial values. E.g function Car(wheels, color, engineType,cc) {
+
+}
+
+Constructor : It is a function which initializes the values of a function/class.
+new : Keyword is used to create instances of a type
+
+
+this? => this keyword represents context (Where the peice of code/variable/function lives)
+
+In OOP we create 2 type of functions to read/update the values in side an object, i.e getter and setter
+
+Types of programming in JS : procedural programming and Object Oriented Programming, Functional Programming
+
+
+Real Life Example : 
+I want to change the color of car object.
+I want to change the color of this object.
+
+
+jQuery => jQuery is a JavaScript Library.
+How to use jQuery ? 
+Include its CDN URL (https://code.jquery.com/jquery-3.6.0.min.js) in script tag in our HTML file.
+
+Uses of jQuery : 
+1. Manipulate DOM
+2. Manipulates CSS
+3. AJAX
+
+jQuery can be accessed using "$" symbol.
+
+JavaScript/Plain JavaScript/Vanilla JavaScript
+
+1. Selector in jQuery : $(<SELECTOR>);
+2. css method : $(<SELECTOR>).css(<PROPERTY-NAME>,<PROPERTY-VALUE>); --OR-- $(<SELECTOR>).css(<OBJECT-OF-CSS>);
+3. first(), last(), eq()
+ text(), val(), on()
+
+
+ Regex : Regular Expressions
+
+Regex ? It is a pattern which helps us in finding/searching/identifying a word/letter in a string.
+
+
+The cat eat rats which are fat.
+
+Syntax /<REGEX>/
+E.g /T*/
+
+
+Symbols in Regex
+
+* => 0 or more occurances
++ => 1 or more occurances
+? => Optional
+. => Anything
+
+\w => Anything which is a word
+\W => Anything which is not a word
+\s => Anything which is a space
+\S => Anything which is not a space
+\d => Anything which is a digit
+\D => Anything which is not a digit
+
+{minLength, maxLength} => for min and max length
+[] => Group with a range
+
+Options
+g => Global
+i => Case insensitive
+
+
+3 ways to declare a variables : 
+
+var => From v1 till now
+
+ES6 (2015)
+let
+const
+
+
+
+Prototype : It is an object where all the mthods of an object/type of object is stored.
+
+Prototype chaining => When you call a method, JS searches this method in current prototype, if its not available it goes further to check the method and so on..
